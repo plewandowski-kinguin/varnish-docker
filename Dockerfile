@@ -1,6 +1,6 @@
 FROM        ubuntu:14.04.2
-MAINTAINER  Love Nyberg "love.nyberg@lovemusic.se"
-ENV REFRESHED_AT 2014-10-18
+MAINTAINER  Paweł Lewandowski "pawel.lewandowski@kinguin.net"
+ENV REFRESHED_AT 2015-10-08
 
 # Update the package repository and install applications
 RUN apt-get update -qq && \

@@ -9,5 +9,5 @@ do
 done
 
 # Start varnish and log
-varnishd -f /etc/varnish/default.vcl -s malloc,100M -a 0.0.0.0:${VARNISH_PORT} -T 0.0.0.0:6082 -p cli_buffer 81920 
+varnishd -f /etc/varnish/default.vcl -s malloc,100M -a 0.0.0.0:${VARNISH_PORT} -T 0.0.0.0:6082 -p cli_buffer=81920 
 varnishlog

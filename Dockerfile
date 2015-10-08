@@ -6,6 +6,7 @@ ENV REFRESHED_AT 2015-10-08
 RUN apt-get update -qq && \
   apt-get upgrade -yqq && \
   apt-get -yqq install varnish && \
+  apt-get -yqq install telnet && \
   apt-get -yqq clean
 
 # Make our custom VCLs available on the container
